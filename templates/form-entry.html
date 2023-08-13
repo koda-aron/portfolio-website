@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+
+<section id="title" class="gradient-background pt-5">
+  <div class="px-4 pt-5 text-center">
+    <h1 class="display-5 fw-bold text-white pt-5">Message sent successfully</h1>
+    <div class="col-lg-6 mx-auto pb-5">
+      <p class="lead">I will get back to you as soon as possible</p>
+    </div>
+  </div>
+  <form method="post" action="{{ url_for('success') }}">
+    <div class="d-grid gap-2 d-md-flex mb-4 pb-5 justify-content-center">
+      <input type="submit" name="submit_button" value="Return Home" class="btn btn-dark btn-lg px-4 me-md-2 mx-2">
+    </div>
+  </form>
+
+
+{% include 'footer.html' %}
+
+

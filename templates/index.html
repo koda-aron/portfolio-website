@@ -1,0 +1,190 @@
+{% include 'header.html' %}
+
+  <!-- Title -->
+  <section id="title" class="gradient-background pt-5">
+    <div class="px-4 py-5 text-center">
+      <h1 class="display-5 fw-bold text-white pt-5"></h1>
+      <h1 class="display-5 fw-bold text-white pt-5">Konrad Tymicki</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Software and web developer.</p>
+      </div>
+    </div>
+  <!-- Features -->
+  <section id="features">
+    <div class="container px-4 py-5" id="hanging-icons">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"> <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" /> <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" /></svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-white">Goal-oriented</h3>
+            <p>I'm working hard to become a programmer.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img src="static/images/graduation-cap.svg" height="35px">
+          </div>
+          <div>
+            <h3 class="fs-2 text-white">Eager to learn</h3>
+            <p>Self-taught and motivated to keep going.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img src="static/images/team.svg" height="35px">
+          </div>
+          <div>
+            <h3 class="fs-2 text-white">Cooperative</h3>
+            <p>I'm reliable and flexible, so I work well as part of a team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- About me -->
+  <section id="title">
+    <div class="container col-xxl-8 px-4 py-5" data-aos="fade-right">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="static/images/profile-pic.jpg" class="d-block mx-lg-auto img-fluid rounded-circle" width="200" height="200" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">About me</h1>
+                <p class="lead">I discovered my love for coding {{ coding_length.days }} days ago. I realized that becoming a programmer was within my reach. So I took an online course and learned Python. Coding is so fulfilling. It's the sense of achievement after breaking down a problem into small tasks and solving them one by one. I love what I do and wish to make a career out of it. I live in <a href="https://g.co/kgs/Ue1cC1" target="_blank" class="link-dark text-decoration-none link-opacity-50-hover"><strong>Olsztyn</strong></a>, Poland and in my spare time I enjoy <a href="https://www.instagram.com/kodaaronmusic" target=”_blank” class="link-dark text-decoration-none link-opacity-50-hover"><strong>making music</strong></a>, watching baseball and learning Korean.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Course -->
+  <section id="testimonial">
+    <div  data-aos="fade-left">
+    <div class="container px-4 py-5">
+      <div class="container text-center">
+        <h3><a href="https://www.udemy.com/course/100-days-of-code/" class="nav-link link-light pt-5 link-opacity-50-hover" target=”_blank”>100 Days of Code: The Complete Python Pro Bootcamp for 2023</a></h3>
+      </div>
+      <div class="row">
+        <div class="column text-center">
+          <a href="https://www.udemy.com/course/100-days-of-code/" target=”_blank”><img src="static/images/udemy-logo.png" class="py-2" height="100px"></a>
+          <a href="https://www.udemy.com/course/100-days-of-code/" target=”_blank” class="nav-link link-dark link-opacity-50-hover">Udemy</a>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 pb-5" id="icon-grid">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">GUI</h3>
+          <p>I learned Python desktop app development using Tkinter.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">Games</h3>
+          <p>I built Blackjack (Python console), Pong and Snake (Turtle graphics).</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">Web scraping</h3>
+          <p>I learned web scraping using Beautiful soup and Selenium web driver.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">Automation</h3>
+          <p>I built a Stock trading news alert application, a Flight deal finder, an Amazon price tracker and more.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">Front-end web development</h3>
+          <p>I learned Front-end using HTML, CSS and Bootstrap.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">Back-end web development</h3>
+          <p>For Back-end I used Flask, SQL, SQLite, PostgreSQL and API's.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">Web deployment</h3>
+          <p>I deployed websites using GitHub Pages, Heroku and GUnicorn.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-white">Data science</h3>
+          <p>I learned to analyze data frames using Pandas, NumPy, Matplotlib, Plotly, Scikit and Seaborn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!-- Projects -->
+  <div class="container px-4 py-5" id="custom-cards" data-aos="fade-right">
+    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">My projects</h1>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('static/images/flower.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="{{ url_for('project', project_name='text-to-morse-code') }}" class="nav-link px-2">Text to morse code</a></h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="static/images/profile-pic.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('static/images/flower.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="https://github.com/koda-aron/tic-tac-toe" target=”_blank” class="nav-link px-2">Tic Tac Toe</a></h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="static/images/profile-pic.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('static/images/flower.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="https://github.com/koda-aron/image-watermarking-desktop-app" target="_blank" class="nav-link px-2">Watermark desktop app</a></h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="static/images/profile-pic.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="footer">
+    <div class="px-4 pt-5 mt-5 text-center">
+      <h1 class="pt-5 display-5 fw-bold text-white">Contact me</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4 py-2">Email me at <a href="mailto:tymicki.konrad@gmail.com?subject=KonradTymicki.com" class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><strong>tymicki.konrad@gmail.com</strong></a> or use the email form below.</p>
+      </div>
+    </div>
+  </section>
+{% include 'footer.html' %}

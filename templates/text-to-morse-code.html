@@ -1,0 +1,40 @@
+{% include 'header.html' %}
+
+<section id="title" class="gradient-background py-5">
+    <div class="px-4 py-5 mt-5 text-center">
+    <h1 class="display-5 fw-bold text-white">Text to morse code encoder</h1>
+    <div class="col-lg-6 mx-auto pb-5">
+      <p class="lead mb-4">Simple encoder that converts text to morse code</p>
+    </div>
+  </div>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <form action="{{ url_for('project', project_name='text-to-morse-code') }}" method="post" id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              {% if no_input: %}
+              <input type="text" class="form-control" placeholder="Text" id="text" name="text" required data-validation-required-message="Type something here">
+              {% else: %}
+              <input type="text" class="form-control" value="{{ user_input }}" id="text" name="text" required data-validation-required-message="Type something here">
+              {% endif %}
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <input type="text" class="form-control" placeholder="Morse code" value="{{ encoded_text }}" id="morse" name="morse">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-dark" id="sendMessageButton">Convert</button>
+        </form>
+      </div>
+    </div>
+</div>
+<div class="py-5 my-5 text-center">
+ <a href="{{ url_for('home') }}" class="btn btn-dark">Return Home</a>
+</div>
+</section>
