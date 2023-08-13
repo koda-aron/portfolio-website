@@ -3,9 +3,11 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from ttmc import Encoder
 import datetime
+import os
 
-MY_EMAIL = "contact.form.python@gmail.com"
-PASSWORD = "muhpyeuefxpzkwmd"
+
+MY_EMAIL = os.environ['MY_EMAIL']
+PASSWORD = os.environ['PASSWORD']
 
 
 def create_app():
