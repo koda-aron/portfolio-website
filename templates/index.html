@@ -1,16 +1,21 @@
 {% include 'header.html' %}
 
   <!-- Title -->
-  <section id="title" class="gradient-background pt-5">
-    <div class="px-4 py-5 text-center">
-      <h1 class="display-5 fw-bold text-white pt-5"></h1>
-      <h1 class="display-5 fw-bold text-white pt-5">Konrad Tymicki</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Software and web developer.</p>
+  <section id="background" class="gradient-background pt-5">
+    <section id="title" class="container">
+      <div class="px-4 py-5 text-center">
+        <div class="col-lg-6 mx-auto">
+          <h1 class="display-5 fw-bold text-white pt-5"></h1>
+          <h1 class="display-5 fw-bold text-white pt-5">Konrad Tymicki</h1>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Software and web developer.</p>
+        </div>
       </div>
-    </div>
-  <!-- Features -->
-  <section id="features">
+    </section>
+
+<!-- Features -->
+  <section id="features" class="container">
     <div class="container px-4 py-5" id="hanging-icons">
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
@@ -42,10 +47,10 @@
         </div>
       </div>
     </div>
-
   </section>
+
   <!-- About me -->
-  <section id="title">
+  <section id="about" class="container">
     <div class="container col-xxl-8 px-4 py-5" data-aos="fade-right">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
@@ -58,11 +63,12 @@
         </div>
     </div>
   </section>
+
   <!-- Course -->
-  <section id="testimonial">
-    <div  data-aos="fade-left">
+  <section id="course" class="container">
+    <div  data-aos="fade-right">
     <div class="container px-4 py-5">
-      <div class="container text-center">
+      <div class="text-center">
         <h3><a href="https://www.udemy.com/course/100-days-of-code/" class="nav-link link-light pt-5 link-opacity-50-hover" target=”_blank”>100 Days of Code: The Complete Python Pro Bootcamp for 2023</a></h3>
       </div>
       <div class="row">
@@ -134,57 +140,67 @@
   </div>
   </div>
   </section>
+
   <!-- Projects -->
-  <div class="container px-4 py-5" id="custom-cards" data-aos="fade-right">
-    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">My projects</h1>
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('static/images/flower.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="{{ url_for('project', project_name='text-to-morse-code') }}" class="nav-link px-2">Text to morse code</a></h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="static/images/profile-pic.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-            </ul>
-          </div>
-        </div>
+  <section id="projects" class="container">
+    <div class="container" data-aos="fade-right">
+      <div class="container text-center">
+        <h1 class="display-5 fw-bold text-white">My projects</h1>
       </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('static/images/flower.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="https://github.com/koda-aron/typing-speed-test" target=”_blank” class="nav-link px-2">Typing Speed Test</a></h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="static/images/profile-pic.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-            </ul>
-          </div>
+      <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+        <div class="list-group">
+          <a href="{{ url_for('project', project_name='text-to-morse-code') }}" class="list-group-item list-group-item-action d-flex gap-3 py-3"  target=”_blank” aria-current="true">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Text to morse code</h6>
+                <p class="mb-0 opacity-75">Simple Python code that converts text to morse code. It's accessible through this website.</p>
+              </div>
+              <small class="opacity-50 text-nowrap">June 2023</small>
+            </div>
+          </a>
+          <a href="https://github.com/koda-aron/image-watermarking-desktop-app" class="list-group-item list-group-item-action d-flex gap-3 py-3" target=”_blank” aria-current="true">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Image watermarking desktop app</h6>
+                <p class="mb-0 opacity-75">Allows you to upload a jpg file and add a watermark to it. Made using CTkinter.</p>
+              </div>
+              <small class="opacity-50 text-nowrap">July 2023</small>
+            </div>
+          </a>
+          <a href="https://github.com/koda-aron/typing-speed-test" class="list-group-item list-group-item-action d-flex gap-3 py-3" target=”_blank” aria-current="true">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Typing speed test</h6>
+                <p class="mb-0 opacity-75">Measures your typing speed in WPM and CPM. Made using CTkinter.</p>
+              </div>
+              <small class="opacity-50 text-nowrap">August 2023</small>
+            </div>
+          </a>
+          <a href="https://github.com/koda-aron/breakout" class="list-group-item list-group-item-action d-flex gap-3 py-3" target=”_blank” aria-current="true">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Breakout</h6>
+                <p class="mb-0 opacity-75">Classic arcade video game. Made using Turtle graphics.</p>
+              </div>
+              <small class="opacity-50 text-nowrap">August 2023</small>
+            </div>
+          </a>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('static/images/flower.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="https://github.com/koda-aron/image-watermarking-desktop-app" target="_blank" class="nav-link px-2">Watermark desktop app</a></h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="static/images/profile-pic.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section id="footer">
-    <div class="px-4 pt-5 mt-5 text-center">
-      <h1 class="pt-5 display-5 fw-bold text-white">Contact me</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4 py-2">Email me at <a href="mailto:tymicki.konrad@gmail.com?subject=KonradTymicki.com" class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><strong>tymicki.konrad@gmail.com</strong></a> or use the email form below.</p>
       </div>
     </div>
   </section>
+
+  <section id="contact">
+    <div class="px-4 pt-5 mt-5 text-center">
+      <h1 class="pt-5 display-5 fw-bold text-white">Contact me</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4 py-2">Email me at <a href="mailto:tymicki.konrad@gmail.com?subject=Portfolio website" class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><strong>tymicki.konrad@gmail.com</strong></a> or use the email form below.</p>
+      </div>
+    </div>
+  </section>
+
 {% include 'footer.html' %}
