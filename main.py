@@ -1,5 +1,5 @@
 import smtplib
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 from flask_bootstrap import Bootstrap
 from ttmc import Encoder
 import datetime
@@ -83,5 +83,10 @@ def success():
             return redirect(url_for('home'))
 
 
+@app.route('/download')
+def download():
+    return send_from_directory('static', path="files/Konrad Tymicki CV.pdf")
+
+
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

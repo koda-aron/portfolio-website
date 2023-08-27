@@ -33,30 +33,32 @@
   <footer class="d-flex justify-content-center py-3">
   <div class="container px-5" style="text-align: center">
   <div class="row">
-    <div class="col-md pb-2">
+    <div class="col pb-2">
       <svg viewBox="0 0 1067 1067" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="20" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;vertical-align: top" class="w-5 h-5" aria-label="LinkedIn icon"><path d="M984.948 0H81.655C38.42 0 3.356 34.227 3.356 76.411V990.28c0 42.16 35.064 76.387 78.299 76.387h903.293c43.299 0 78.363-34.246 78.363-76.387V76.411c0-42.205-35.083-76.411-78.363-76.411ZM324.635 892.938H164.542v-481.65h160.093v481.65ZM244.599 345.49h-1.072c-53.7 0-88.442-36.993-88.442-83.209 0-47.245 35.814-83.209 90.565-83.209 54.773 0 88.464 35.964 89.536 83.209 0 46.216-34.785 83.209-90.587 83.209Zm657.357 547.448H741.841V635.203c0-64.725-23.162-108.902-81.087-108.902-44.223 0-70.558 29.786-82.16 58.568-4.223 10.274-5.255 24.642-5.255 39.052v268.994H413.247s2.105-436.506 0-481.65h160.092v68.176c21.275-32.811 59.322-79.542 144.309-79.542 105.321 0 184.308 68.861 184.308 216.815v276.224Z" style="fill:#151313;fill-rule:nonzero"></path></svg>
       <a href="https://www.linkedin.com/in/konrad-tymicki-a84667274/" target=”_blank” class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><h5 style="display: inline;">LinkedIn</h5></a>
     </div>
-    <div class="col-md pb-2">
+    <div class="col pb-2">
       <svg viewBox="0 0 1067 1067" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="20" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;vertical-align: top" class="w-5 h-5" aria-label="Github icon"><path d="M533.333.027C238.81.027 0 244.789 0 546.932c0 241.665 152.857 446.429 364.762 518.811 26.668 5 36.427-11.906 36.427-26.432 0-13.094-.474-47.379-.715-93.092-148.331 33.093-179.76-73.334-179.76-73.334-24.286-63.097-59.285-80.003-59.285-80.003-48.334-34.043 3.571-33.329 3.571-33.329 53.571 3.808 81.667 56.427 81.667 56.427 47.619 83.57 124.761 59.521 155.236 45.477 4.763-35.24 18.571-59.526 33.812-73.097-118.334-13.807-242.858-60.713-242.858-270.235 0-59.763 20.714-108.574 54.762-146.669-5.476-13.81-23.81-69.524 5.238-144.762 0 0 44.762-14.762 146.666 55.952 42.62-12.143 88.097-18.095 133.574-18.333 45.235.238 90.949 6.19 133.569 18.333 101.904-70.714 146.43-55.952 146.43-55.952 29.048 75.238 10.714 130.952 5.236 144.762 34.049 38.331 54.763 87.143 54.763 146.669 0 209.995-124.761 256.186-243.572 269.758 19.049 16.905 36.192 50.24 36.192 101.189 0 73.097-.715 132.145-.715 150.002 0 14.522 9.522 31.669 36.665 26.192 212.384-72.142 365.002-276.906 365.002-518.334C1066.667 244.789 827.859.027 533.333.027Z" style="fill:#151313"></path></svg>
       <a href="https://github.com/koda-aron" target=”_blank” class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><h5 style="display: inline;">Github</h5></a>
     </div>
-    <div class="col-md pb-2">
-      <img src="static/images/discord.svg" height="25" style=";vertical-align: top">
-      <a href="https://discord.com/channels/@kodaaron" target=”_blank” class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><h5 style="display: inline;">Discord</h5></a>
-    </div>
-    <div class="col-md pb-2">
+    <div class="col pb-2">
       <img src="static/images/gmail.svg" height="22" style="vertical-align: top">
       <a href="mailto:tymicki.konrad@gmail.com?subject=Portfolio website" class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><h5 style="display: inline;">Gmail</h5></a>
+    </div>
+    <div class="col pb-2">
+      <img src="static/images/pdf.svg" height="22" style="vertical-align: top">
+      <a href="{{ url_for('download') }}" target=”_blank” class="nav-link link-dark link-opacity-50-hover" style="display: inline;"><h5 style="display: inline;">CV.pdf</h5></a>
     </div>
   </div>
   </div>
   </footer>
-    <div class="py-4">
+  <div class="container" style="text-align: center">
+    <div class="row py-5">
       <div class="col">
-        <p class="text-muted text-center">© Konrad Tymicki {{ year }}</p>
+        <p class="text-muted">© Konrad Tymicki {{ year }}</p>
       </div>
     </div>
+  </div>
   </section>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
